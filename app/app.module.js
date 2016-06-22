@@ -6,6 +6,8 @@
   //third-partaaaay modules
   'firebase',
   //Custom modules
-  'mutantApp.home',  
+  'mutantApp.home',
+  'mutantApp.mutantList',
+  'mutantApp.auth', 
  ]);
 })();
