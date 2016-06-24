@@ -2,22 +2,16 @@
   'use strict';
 
   angular
-    .module('mutantApp.auth')
+    .module('mutantApp.mutantList')
     .config(configFunction);
 
   configFunction.$inject = ['$stateProvider'];
 
   function configFunction($stateProvider) {
-    $stateProvider.state('register', {
-      url: '/register',
-      templateUrl: 'app/auth/register.html',
-      controller: 'AuthController',
-      controllerAs: 'vm'
-    });
-    $stateProvider.state('login', {
-      url: '/login',
-      templateUrl: 'app/auth/login.html',
-      conroller: 'AuthController',
+    $stateProvider.state('mutantList', {
+      url: '/mutantlist',
+      templateUrl: 'app/mutantList/mutantList.html',
+      controller: 'MutantListController',
       controllerAs: 'vm',
       resolve: {
         user: resolveUser,
